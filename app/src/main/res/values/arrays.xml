@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="cloth_list">
+        <item>@drawable/cloth_pants</item>
+        <item>@drawable/cloth_pants2</item>
+        <item>@drawable/cloth_pants3</item>
+        <item>@drawable/cloth_pants4</item>
+        <item>@drawable/cloth_pants5</item>
+        <item>@drawable/cloth_pants6</item>
+        <item>@drawable/cloth_pants7</item>
+        <item>@drawable/cloth_pants8</item>
+    </array>
+
+    <string-array name="cloth_category1">
+        <item>(선택)</item>
+        <item>상의</item>
+        <item>하의</item>
+        <item>신발</item>
+        <item>아우터</item>
+    </string-array>
+
+    <string-array name="not_selected">
+        <item>옷 종류(x)</item>
+    </string-array>
+
+    <string-array name="cloth_top">
+        <item>(선택)</item>
+        <item>반팔</item>
+        <item>맨투맨</item>
+        <item>니트</item>
+        <item>셔츠</item>
+        <item>남방</item>
+        <item>후드티</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="cloth_pants">
+        <item>(선택)</item>
+        <item>반바지</item>
+        <item>청바지</item>
+        <item>면바지</item>
+        <item>슬렉스</item>
+        <item>스키니</item>
+        <item>와이드</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="shoes">
+        <item>(선택)</item>
+        <item>슬리퍼</item>
+        <item>샌들</item>
+        <item>컨버스</item>
+        <item>운동화</item>
+        <item>구두</item>
+        <item>기타</item>
+    </string-array>
+
+
+    <string-array name="cloth_top_top">
+        <item>(선택)</item>
+        <item>반팔</item>
+        <item>맨투맨</item>
+        <item>니트</item>
+        <item>셔츠</item>
+        <item>남방</item>
+        <item>후드티</item>
+        <item>기타</item>
+    </string-array>
+
+
+    <string-array name="cloth_top_outer">
+        <item>(선택)</item>
+        <item>후드집업</item>
+        <item>가디건</item>
+        <item>자켓</item>
+        <item>야상</item>
+        <item>코트</item>
+        <item>패딩</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>(선택)</item>
+        <item>빨강색</item>
+        <item>주황색</item>
+        <item>노랑색</item>
+        <item>초록색</item>
+        <item>파랑색</item>
+        <item>남색</item>
+        <item>보라색</item>
+        <item>흰색</item>
+        <item>검은색</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="style">
+        <item>(선택)</item>
+        <item>일상</item>
+        <item>운동</item>
+        <item>격식</item>
+        <item>데이트</item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="all">
+        <item>(선택)</item>
+        <item>(전체)</item>
+    </string-array>
+
+    <string-array name="favorite">
+        <item>(선택)</item>
+        <item>(전체)</item>
+    </string-array>
+
+
+</resources>

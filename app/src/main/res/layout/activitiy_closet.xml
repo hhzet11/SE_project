@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cody_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/category_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_top"
+                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/top"
+                />
+            <Button
+                android:id="@+id/btn_pants"
+                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/pants"
+                />
+            <Button
+                android:id="@+id/btn_outer"
+                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/outer"
+                />
+            <Button
+                android:id="@+id/btn_shoes"
+                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/shoes"
+                />
+            <Button
+                android:id="@+id/btn_favorite"
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/favorite"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/page_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/type"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_type_top"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/color"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_color_top"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/style"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_style_top"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/check_top"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/check"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/page_pants"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/type"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_type_pants"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/color"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_color_pants"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/style"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_style_pants"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/check_pants"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/check"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/page_outer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/type"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_type_outer"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/color"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_color_outer"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/style"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_style_outer"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/check_outer"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/check"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/page_shoes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/type"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_type_shoes"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/color"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_color_shoes"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="@string/style"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_style_shoes"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/check_shoes"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/check"
+                />
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/codyImg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="450dp">
+
+                <GridView
+                    android:id="@+id/cloth_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginTop="50dp"
+                    android:columnWidth="100dp"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="150dp"
+        >
+
+        <Button
+            android:id="@+id/btn_register_cloth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_cloth"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

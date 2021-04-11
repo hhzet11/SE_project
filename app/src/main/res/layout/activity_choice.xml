@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/btn_closet"
+        android:layout_width="wrap_content"
+        android:layout_height="271dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/closet_btn" />
+
+    <ImageButton
+        android:id="@+id/btn_cody"
+        android:layout_width="wrap_content"
+        android:layout_height="278dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/cody_btn" />
+
+</LinearLayout>

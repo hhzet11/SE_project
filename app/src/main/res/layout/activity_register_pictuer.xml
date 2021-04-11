@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    ////////////////////////////////////////// 이 부분 기본 스크롤뷰
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/cloth_name"
+            />
+        <EditText
+            android:id="@+id/cloth_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/picture_cloth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-20dp"
+            />
+
+        <Button
+            android:id="@+id/register_picture"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register_picture"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category1"
+            android:textColor="#FF000000"
+            android:layout_marginRight="20dp"
+            />
+        <Spinner
+            android:id="@+id/category1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category2"
+            android:textColor="#FF000000"
+            android:layout_marginRight="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/category2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            android:textColor="#FF000000"
+            android:layout_marginRight="20dp"
+            />
+        <Spinner
+            android:id="@+id/color"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/style"
+            android:textColor="#FF000000"
+            android:layout_marginRight="20dp"
+            />
+        <Spinner
+            android:id="@+id/style"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/register_cloth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_cloth"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+
+///////////////////////////////////////////이 부분이 이미지 선택 프레임
+    <LinearLayout
+        android:id="@+id/select_picture"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:background="@color/skyBlue"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/camera"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+            <Button
+                android:id="@+id/btn_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/album"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_marginRight="5dp"
+
+                />
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/cancel"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_marginRight="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
